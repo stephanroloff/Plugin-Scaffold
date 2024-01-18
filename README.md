@@ -17,4 +17,3 @@ proxy: 'http://localhost:10095/'
 
 - Don't forget everytime you change the composer.json file to run:
   composer dump-autoload
-# Plugin-Scaffold
