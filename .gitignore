@@ -34,3 +34,4 @@ build
 
 src/useful-examples
 .DS_Store
+vendor/

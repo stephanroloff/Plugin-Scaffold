@@ -10,7 +10,7 @@ module.exports = {
           // ./public directory is being served
           host: 'localhost',
           port: 3000,
-          proxy: 'http://localhost:10095/'
+          proxy: 'http://localhost:10115/'
         })
     ]
 };
