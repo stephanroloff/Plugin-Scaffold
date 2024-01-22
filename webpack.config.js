@@ -1,8 +1,16 @@
 const defaultConfig = require( '@wordpress/scripts/config/webpack.config' );
+const { getWebpackEntryPoints } = require( '@wordpress/scripts/utils/config' );
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin')
  
 module.exports = {
     ...defaultConfig,
+    entry: {
+      // Define tus entry points aquí
+      ...getWebpackEntryPoints(),
+      both: './src/assets/both/both.js',
+      editor: './src/assets/editor/editor.js',
+      frontend: './src/assets/frontend/frontend.js',
+    },
     plugins: [
         ...defaultConfig.plugins,
         new BrowserSyncPlugin({

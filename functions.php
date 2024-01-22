@@ -26,6 +26,7 @@ require __DIR__ . '/vendor/autoload.php';
 define('MY_PLUGIN_PATH_PLUGIN_SCAFFOLD',plugin_dir_url(__FILE__));
 
 $RegisterBlocks = new RegisterBlocks();
+$EnqueueAssets = new EnqueueAssets();
 
 
 namespace OtherNamespace;
